@@ -1,0 +1,22 @@
+{
+    "name": "kin/module-manager",
+    "description": "Laravel Module Management",
+    "type": "laravel",
+    "authors": [
+        {
+            "name": "kin",
+            "email": "nguoicodon.dn95@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/console": "5.4.*",
+        "illuminate/database": "5.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\ModuleManager\\": "src/"
+        }
+    },
+    "license": "MIT"
+}
