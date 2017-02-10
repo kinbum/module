@@ -2,6 +2,9 @@
 <p>coppy file to: core/module</p>
 <p>composer use: "Core\\Module\\":"core/module/src/"<p>
 <p>composer run: composer dumpautoload</p>
+<p>Add line to config/app provider
+  <code>Core\Module\Providers\ModuleProvider::class</code>
+</p>
 <h3>Use view</h3>
 <p>view('module::view').</p>
 <p><i><u>Example:</u></i><p><p>
