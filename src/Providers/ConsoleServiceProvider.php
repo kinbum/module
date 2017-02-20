@@ -44,7 +44,7 @@ class ConsoleServiceProvider extends ServiceProvider
             'module_manager.console.generator.make-middleware' => \Core\Module\Console\Generators\MakeMiddleware::class,
             'module_manager.console.generator.make-request' => \Core\Module\Console\Generators\MakeRequest::class,
             'module_manager.console.generator.make-model' => \Core\Module\Console\Generators\MakeModel::class,
-//            'module_manager.console.generator.make-repository' => \Core\Module\Console\Generators\MakeRepository::class,
+            // 'module_manager.console.generator.make-repository' => \Core\Module\Console\Generators\MakeRepository::class,
             'module_manager.console.generator.make-facade' => \Core\Module\Console\Generators\MakeFacade::class,
             'module_manager.console.generator.make-service' => \Core\Module\Console\Generators\MakeService::class,
             'module_manager.console.generator.make-support' => \Core\Module\Console\Generators\MakeSupport::class,
@@ -123,7 +123,6 @@ class ConsoleServiceProvider extends ServiceProvider
         // files in the application. We'll pass in our database connection resolver
         // so the migrator can resolve any of these connections when it needs to.
         $this->app->singleton('module.migrator', function ($app) {
-
             return new ModuleMigrator($app);
         });
     }
